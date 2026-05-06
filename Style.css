@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f0f1a;
+  color: white;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #1a1a2e;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.active {
+  background: #4ade80;
+}
+
+/* Caller */
+.caller-section {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a2e;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: #534AB7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 24px;
+}
+
+/* Subtitle */
+.subtitle-box {
+  padding: 15px;
+}
+
+.label {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.subtitle-card {
+  background: #1e1e32;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* History */
+.history {
+  padding: 15px;
+  height: 150px;
+  overflow-y: auto;
+}
+
+.history-item {
+  background: #1e1e32;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-left: 3px solid #7F77DD;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: #1a1a2e;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+button.end {
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+}
