@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DeafCall Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h2>📞 DeafCall</h2>
+    <div id="statusDot" class="status-dot"></div>
+  </div>
+
+  <!-- Caller Info -->
+  <div class="caller-section">
+    <div class="avatar" id="avatar">?</div>
+    <div id="callerName">No active call</div>
+    <div id="timer">00:00</div>
+    <button onclick="startCallPrompt()">Start Call</button>
+  </div>
+
+  <!-- Subtitles -->
+  <div class="subtitle-box">
+    <p class="label">Live Transcript</p>
+    <div class="subtitle-card">
+      <p id="subtitleText">Waiting for call</p>
+      <p id="partialText" class="partial"></p>
+    </div>
+  </div>
+
+  <!-- History -->
+  <div class="history">
+    <p class="label">Previous</p>
+    <div id="historyList"></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button onclick="toggleMute()">🎙️<br>Mute</button>
+    <button onclick="toggleFlash()">💡<br>Flash</button>
+    <button onclick="changeFont()">🔡<br>Font</button>
+    <button class="end" onclick="endCall()">📵<br>End</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
